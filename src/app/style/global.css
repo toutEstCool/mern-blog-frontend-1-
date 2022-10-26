@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	/* background-color: #000300; */
+	background-color: rgba(204, 210, 221, 0.7);
+}
+
+#root {
+	color: white;
+	@apply max-w-[1240px] mx-auto p-5;
+}

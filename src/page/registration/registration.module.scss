@@ -1,0 +1,24 @@
+.register {
+	@apply h-screen flex justify-center items-center;
+	.wrapperFormRegistration {
+		@apply w-[600px] h-[500px]  flex flex-col justify-center items-center bg-gray-100 p-10 rounded-lg;
+		h3 {
+			@apply text-2xl font-bold text-black tracking-wide mb-5;
+		}
+
+		.form {
+			@apply w-full flex flex-col justify-center items-center;
+
+			input {
+				&:first-child {
+					@apply mt-5;
+				}
+				@apply w-[80%] mb-5 p-3 rounded-lg text-black;
+			}
+
+			button {
+				@apply bg-[#00df9a] hover:bg-[#18ffb7] duration-300 w-[80%] p-3 rounded-lg;
+			}
+		}
+	}
+}

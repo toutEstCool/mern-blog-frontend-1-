@@ -1,0 +1,41 @@
+.header {
+	@apply text-white flex justify-between items-center;
+	&Logo {
+		@apply w-full text-3xl font-bold text-[#00df9a];
+	}
+	&BtnWrapper {
+		@apply flex items-center gap-5;
+		.signIn {
+			a {
+				button {
+					@apply text-[#00df9a] border border-amber-50 rounded-md py-2 px-6;
+				}
+			}
+		}
+		.signUp {
+			a {
+				button {
+					@apply w-[175px] bg-[#00df9a] py-2 px-6 rounded-md;
+				}
+			}
+		}
+	}
+
+	.headerBtnWrapperIsAuth {
+		@apply flex items-center gap-5;
+		.signIn {
+			a {
+				button {
+					@apply w-[175px] text-[#00df9a] border border-amber-50 rounded-md py-2 px-6;
+				}
+			}
+		}
+		.signUp {
+			a {
+				button {
+					@apply bg-[#00df9a] py-2 px-6 rounded-md hover:bg-white hover:text-[#000300] duration-300;
+				}
+			}
+		}
+	}
+}
